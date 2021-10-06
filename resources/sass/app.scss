@@ -1,0 +1,69 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #95c5ed;
+}
+
+.todo_container {
+    margin: 2rem;
+
+    .form_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .todo_list {
+        margin: 1rem auto;
+        padding: .5rem;
+        background-color: white;
+        width: 65%;
+
+        .todo_item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .actions {
+                align-items: center;
+                display: flex;
+                gap: 1rem;
+
+
+                .icon:hover i {
+                    font-size: 2rem;
+                }
+
+                i {
+                    font-size: 1.7rem;
+                    transition: .2s ease-in-out;
+                }
+
+                .icon {
+                    border: none;
+                    background: transparent;
+                }
+            }
+        }
+
+        .timestamp {
+            color: #5a6268;
+        }
+    }
+}
